@@ -1,0 +1,25 @@
+{
+  "name": "@mobilejazz/eslint-config",
+  "version": "0.1.0",
+  "description": "ESLint rules/preferences for Mobile Jazz projects",
+  "author": "Mobile Jazz",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/mobilejazz/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mobilejazz/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mobilejazz/eslint-config/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=7"
+  }
+}
