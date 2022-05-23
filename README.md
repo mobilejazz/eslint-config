@@ -32,15 +32,15 @@ This is meant to be used alongside Prettier (with [`@mobilejazz/prettier-config`
     "scripts": {
       "lint": "npm run eslint && npm run prettier -- --check",
       "format": "npm run eslint -- --fix && npm run prettier -- --write",
-      "prettier": "prettier \"**/*.ts\"",
-      "eslint": "eslint . --ext .ts",
+      "prettier": "prettier \"src/**/*.ts\" \"test/**/*.ts\"",
+      "eslint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
     }
     ```
 
     - `npm run lint`: for checking if ESLint and Prettier complain
-    - `npm run fmt`: attempt to autofix lint issues and autoformat code
+    - `npm run format`: attempt to autofix lint issues and autoformat code
 
-    :memo: Not every rule in this configuration is autofixable, so `npm run fmt` may continue failing until lint issues are addressed manually.
+    :memo: Not every rule in this configuration is autofixable, so `npm run format` may continue failing until lint issues are addressed manually.
 
 ### With Husky
 
