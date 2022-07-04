@@ -1,6 +1,6 @@
 {
   "name": "@mobilejazz/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "ESLint rules/preferences for Mobile Jazz projects",
   "author": "Mobile Jazz",
   "license": "Apache-2.0",
@@ -13,13 +13,17 @@
     "url": "https://github.com/mobilejazz/eslint-config/issues"
   },
   "main": "index.js",
-  "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0"
-  },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": "8.18.*",
+    "@angular-eslint/builder": "14.0.*",
+    "@angular-eslint/eslint-plugin": "14.0.*",
+    "@angular-eslint/eslint-plugin-template": "14.0.*",
+    "@angular-eslint/schematics": "14.0.*",
+    "@angular-eslint/template-parser": "14.0.*",
+    "@typescript-eslint/eslint-plugin": "5.29.*",
+    "@typescript-eslint/parser": "5.29.*",
+    "eslint-config-prettier": "8.5.*",
+    "eslint-plugin-import": "2.26.*",
+    "eslint-plugin-rxjs": "5.0.*"
   }
 }

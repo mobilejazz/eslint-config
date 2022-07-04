@@ -7,21 +7,23 @@ This is meant to be used alongside Prettier (with [`@mobilejazz/prettier-config`
 ## Usage
 
 1. Remove existing `.eslintrc.*` file, if present.
-1. Install `eslint` and the config.
+2. Install `eslint` and the config.
 
     ```sh
     npm install -D eslint @mobilejazz/eslint-config
     ```
+3. Install all the needed dependencies from this library
 
-1. Add the following to `package.json`:
+    ```sh
+    npx install-peerdeps --dev @mobilejazz/eslint-config
+   ```
+4. Add the lint configuration that you need to your`package.json`, `javascipt`, `typescript` or `angular`:
 
     ```json
     "eslintConfig": {
-      "extends": "@mobilejazz/eslint-config/recommended"
+      "extends": "@mobilejazz/eslint-config/angular"
     }
     ```
-
-:memo: You can also use the base rule set: `@mobilejazz/eslint-config`
 
 ### With Prettier and `@mobilejazz/prettier-config`
 
@@ -32,8 +34,8 @@ This is meant to be used alongside Prettier (with [`@mobilejazz/prettier-config`
     "scripts": {
       "lint": "npm run eslint && npm run prettier -- --check",
       "format": "npm run eslint -- --fix && npm run prettier -- --write",
-      "prettier": "prettier \"src/**/*.ts\" \"test/**/*.ts\"",
-      "eslint": "eslint \"src/**/*.ts\" \"test/**/*.ts\"",
+      "prettier": "prettier \"src/**/*.ts\" \"src/**/*.js\" \"src/**/*.html\"",
+      "eslint": "eslint \"src/**/*.ts\" \"src/**/*.js\" \"src/**/*.html\"",
     }
     ```
 
