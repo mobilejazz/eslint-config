@@ -1,6 +1,6 @@
 {
   "name": "@mobilejazz/eslint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "ESLint rules/preferences for Mobile Jazz projects",
   "author": "Mobile Jazz",
   "license": "Apache-2.0",
