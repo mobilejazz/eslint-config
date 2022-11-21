@@ -14,16 +14,16 @@
   },
   "main": "index.js",
   "peerDependencies": {
-    "eslint": "8.18.*",
-    "@angular-eslint/builder": "14.0.*",
-    "@angular-eslint/eslint-plugin": "14.0.*",
-    "@angular-eslint/eslint-plugin-template": "14.0.*",
-    "@angular-eslint/schematics": "14.0.*",
-    "@angular-eslint/template-parser": "14.0.*",
-    "@typescript-eslint/eslint-plugin": "5.29.*",
-    "@typescript-eslint/parser": "5.29.*",
-    "eslint-config-prettier": "8.5.*",
-    "eslint-plugin-import": "2.26.*",
-    "eslint-plugin-rxjs": "5.0.*"
+    "eslint": "^8.18.0",
+    "@angular-eslint/builder": ">=13",
+    "@angular-eslint/eslint-plugin": ">=13",
+    "@angular-eslint/eslint-plugin-template": ">=13",
+    "@angular-eslint/schematics": ">=13",
+    "@angular-eslint/template-parser": ">=13",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-rxjs": "^5.0.0"
   }
 }
